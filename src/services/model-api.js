@@ -1,7 +1,7 @@
 import axios from "axios";
-import { secret } from "../secret";
+// import { secret } from "../secret";
 
-const { apiKey } = secret;
+// const { apiKey } = secret;
 
 export const fetchImages = async (
   promptCall,
@@ -13,7 +13,7 @@ export const fetchImages = async (
     method: "POST",
     url: "https://api.segmind.com/v1/sdxl1.0-txt2img",
     headers: {
-      "x-api-key": `${apiKey}`,
+      "x-api-key": `SG_a02e1dbf68cef77b`,
       "Content-Type": "application/json",
     },
     responseType: "arraybuffer",
